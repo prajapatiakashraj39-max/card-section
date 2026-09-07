@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Great People Profile Cards</title>
+<style>  
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #eef2ff;
+        margin: 0;
+        padding: 40px;
+    }
+    h1 {
+        text-align: center;
+        color: #243b6b;
+        margin-bottom: 35px;
+    }
+    .profile-section {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: nowrap;
+    }
+    .card {
+        background-color: white;
+        width: 250px;
+        flex-shrink: 0;
+        padding: 25px;
+        text-align: center;
+        border-radius: 15px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    }  
+    .card img {
+        width: 130px;
+        height: 130px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 4px solid #243b6b;
+    }
+    #GITHUB {
+        color: #1d4ed8;
+    }
+    #VERCEL {
+        color: #15803d;
+    }
+    #CLAUDE {
+        color: #9333ea;
+    }
+    .role {
+        font-size: 18px;
+        font-weight: bold;
+        margin: 10px 0;
+    }
+    .bio {
+        color: #555;
+        line-height: 1.5;
+    }
+</style>
+</head>
+<body>
+    <h1>AI Tools For Developers</h1>
+
+    <div class="profile-section">
+        <!-- Card 1 -->
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNYrhlt-6G_7lnWtYW-dzpM-WZrmW4lTevx2aZy_jvTQ&s=10">
+            <h2 id="GITHUB">GitHub Copilot</h2>
+            <p class="role">AI Pair Programming Assistant</p>
+            <p class="bio">
+                GitHub Copilot is an AI-powered coding assistant that helps developers write code faster and with fewer errors.
+            </p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card">
+            <img src="https://static.toiimg.com/thumb/imgsize-5766,msid-130387249,width-375,resizemode-4/130387249.jpg">
+            <h2 id="VERCEL">Vercel</h2>
+            <p class="role">Cloud Platform for Static Sites</p>
+            <p class="bio">
+                Vercel is a cloud platform that enables developers to deploy and host static websites and web applications with ease.
+            </p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card">
+            <img src="https://cdn.prod.website-files.com/67053868fc01e494462e71c9/6710cb65b09ebb5f7d6f30aa_66c852f043460eba98fe3b50_claude-ai.jpeg">
+            <h2 id="CLAUDE">Claude</h2>
+            <p class="role">AI Assistant</p>
+            <p class="bio">
+                Claude is an AI assistant developed by Anthropic that helps users with a wide range of tasks, from answering questions to assisting with creative writing.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
